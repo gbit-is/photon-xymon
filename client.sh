@@ -1,9 +1,9 @@
 #!/bin/bash
 
 #################################################
-#												#
-#              Set Variables					#
-#												#
+#						#
+#              Set Variables			#
+#						#
 #################################################
 
 # All tests begin as green.
@@ -28,9 +28,9 @@ xymonPort="Insert Port"
 
 
 #################################################
-#												#
-#		Define function							#
-#												#
+#						#
+#		Define function			#
+#						#
 #################################################
 
 
@@ -53,9 +53,9 @@ sendToXymon() {
 
 
 #################################################
-#												#
-#				   Disk Test					#
-#												#
+#						#
+#		   Disk Test			#
+#						#
 #################################################
 
 
@@ -88,9 +88,9 @@ done
 sendToXymon "disk" $diskColor   # Data is sent to Xymon
 
 #################################################
-#												#
-#					Inode Test					#
-#												#
+#						#
+#		Inode Test			#
+#						#
 #################################################
 
 echo "Inode status (%)" > $tmpfile # Clear and set first line for test body
@@ -119,9 +119,9 @@ sendToXymon "Inodes" $inodeColor # Data is sent to xymon
 
 
 #################################################
-#												#
-#	 				Mem Test					#
-#												#
+#						#
+#	 	Mem Test			#
+#						#
 #################################################
 
 
@@ -156,9 +156,9 @@ sendToXymon "memory" $memColor # Data is sent to Xymon
 
 
 #################################################
-#												#
-#					CPU Test					#
-#												#
+#						#
+#		CPU Test			#
+#						#
 #################################################
 
 

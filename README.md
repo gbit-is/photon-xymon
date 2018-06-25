@@ -13,8 +13,8 @@ It sends: Disk, Inode, CPU and Memory information to a Xymon server from the Pho
 Well, since PhotonOS doesn't have cron I just use a secondary bash script I run with nohup 
 
 while true;do
-        ~script.sh > /dev/null
-        sleep 300
+        ~script.sh > /dev/null;
+        sleep 300;
 done
 
 
